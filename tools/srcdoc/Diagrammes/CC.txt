@@ -1,0 +1,14 @@
+@startuml
+
+title Diagramme des classes Contrôleur
+
+
+class Pythagore {
+  +int calculDistance()
+}
+
+class Kruskal {
+  +String calculChemin()
+}
+
+@enduml

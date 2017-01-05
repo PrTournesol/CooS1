@@ -1,0 +1,50 @@
+@startuml
+
+title Diagramme des classes métier
+
+
+class Carte {
+  +Int dimH
+  +Int dimV
+  +ArrayList<Feu> listFeu
+  +ArrayList<Feu> listFeu
+  +int getLargeur()
+  +void setLargeur(int pfLargeur)
+  +int getHauteur()
+  +setHauteur(int pfHauteur)
+  +ArrayList<Feu> getListFeu()
+  +ArrayList<OLE> getListOLE()
+  +boolean add(Feu e)
+  +boolean add(OLE e)
+}
+
+class Feu {
+  +int intensite
+  +int positionH
+  +int positionV
+  +int getIntensite()
+  +setIntensite(int pfIntensite)
+  +int getPositionH()
+  +setPositionH(int positionH)
+  +getPositionV()
+  +setPositionV(int positionV)
+}
+class OLE {
+  +int vitesse
+  +int puissance
+  +int positionH
+  +int positionV
+  +int getVitesse()
+  +int getPuissance()
+  +setVitesse(int pfVitesse)
+  +setPuissance(int pfPuissance)
+  +getPositionH()
+  +setPositionH(int positionH)
+  +getPositionV()
+  +setPositionV(int positionV)
+}
+
+OLE "*"-->"1" Carte
+Feu "*"-->"1" Carte
+
+@enduml

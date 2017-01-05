@@ -1,0 +1,133 @@
+= Pompiers des airs
+
+:Author:  Groupe 1-5 : Maël Soulié, Yannick Mayeur, Florent Labrune, Nicolas Lejeune
+:doctitle: Pompiers des airs - Documentation du Projet COO-M2104- groupe 1-5
+:slideshowlocation: Your computer
+:copyright: {date={localdate}}, {slideshowlocation} *** {author} *** Powered by AsciiDoc and W3C Slidy &#169;
+:revnumber: 1
+
+include::docConf.txt[]
+
+
+== Sommaire
+
+== Introduction (description du sujet, problématique, composition du groupe)
+
+=== Sujet :
+
+Le but est de réaliser un logiciel permettant de simuler l'utilisation de drones pompiers. Le but étant d'aider les secours à combattre un ou plusieurs incendies. Pour cela les drones sont placés de manière aléatoire ou manuelle sur une carte ainsi que les incendies. Il est alors possible de choisir un des algorithmes de simulation pour tester le fonctionnement.
+
+=== Problématique :
+
+
+
+=== Groupe :
+
+* Yannich Mayeur
+* Nicolas Lejeune
+* Florent Labrune
+* Maël Soulié
+
+== Liste des exigences
+
+
+
+.Cahier des charges
+|===
+|Numéro |Exigence | Niveau
+
+|1. La carte  ||
+|1.1 |pouvoir modifier la taille de la carte (longuer et largeur) | par km
+|1.2 |forme de la carte | rectangle
+|1.3 |taille maximale | 10 km x 10 km
+|1.4 |modélisation par une matrice | /
+
+|2. Les OLEs ||
+|2.1 |vitesse|3 niveaux de vitesse
+|2.2 |nombres|Nombres de robots au choix(1 à 10)
+|2.3 |puissance d'exctinction|3 niveaux
+
+|3. Algorithme de calcul du chemin||
+|3.1 |codage de l'algorithme de Kruskal|facultative
+|3.2 |algorithme natif du plus court chemin entre 2 points (avec Pythagore)|obligatoire
+
+|4. Les feux||
+|4.1 |pouvoir ajouter des feux|3 par km² maximum
+|4.2 |pouvoir générer des feux aléatoirement|obligatoire
+|4.3 |intensité des feux paramétrable|3 niveaux pour chaque feu
+
+|5. L'interface graphique||
+|5.1 |agrandir la fenêtre|les composants s'adaptent
+|5.2 |Message à la fermeture|sauvegarde(paramètres) avec/sans/annuler
+|5.3 |volet de paramètre|fixe à gauche
+|5.4 |carte|fixe à droite
+|===
+
+
+== Diagramme des UC
+
+image::UC.png[]
+
+== Description d'IHM
+
+(Maquettes d'écran futures, SNI, ...)
+
+==== SNI :
+
+image::SNI.png[]
+
+==== Schéma de l'interface dans le cas général :
+
+image::Schema_interface_cas_general.jpg[]
+
+==== Schéma de l'interface pour le mode manuel de réglage des OLE et des feux :
+
+image::Schema_interface_mode_manuel_OLE_feux.jpg[]
+
+
+== Architecture MVC
+
+image::MVC.png[]
+
+== Diagramme des Classes métier (sans les méthodes)
+
+image::DCM.png[]
+
+== Diagramme de Séquence Système pour 1 UC « important »
+
+image::DSS.png[]
+
+== Diagramme de Séquence et Diagramme des Classes Participantes pour l'UC précédent
+
+image::DCP.png[]
+
+
+== Diagramme des Classes contrôleur (avec les méthodes)
+
+image::DCC.png[]
+
+== Annexes (si besoin, par exemple :)
+
+
+
+
+=== FAQ, Glossaire, Index, etc.
+
+
+
+
+=== Autoévaluation (la grille d'évaluation remplie par vos soins)
+
+|====
+| *Critère* | *Type de critère* | *Poids approximatif* | *Autoévaluation (rapport du poids approximatif)*
+| Diagramme des UC | Correction, pertinence | 10% |
+| Diagramme des Classes Métier et Contrôleur | Correction, pertinence | 10% |
+| Maquettes utilisateur | Correction, pertinence | 10%c|
+| Diagramme de Séquence Système (1 UC au moins) | Correction, pertinence | 5% |
+| Diagramme de Séquence « normal » (au moins 1 UC) | Correction, pertinence | 10%c|
+| Diagramme Classes Participantes  (au moins 1 UC) | Correction, pertinence | 10% |
+| Cohérence inter-modèles (SNI/DSS, UC/DSS/DS/DCP) | Correction, pertinence | 10% |
+| Communication/Présentations/Ignite | subjectif :-) | 5% |
+| Code et application finale | Correction, pertinence | 20% |
+| Clarté – Présentation du Dossier | subjectif :-) | 10% |
+|====

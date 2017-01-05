@@ -1,0 +1,60 @@
+@startuml
+
+title DSS Pompiers des airs
+
+Utilisateur -> Application : Nouvelle Simulation
+alt Création Simulation
+    Utilisateur <- Application : Simulation créée
+    alt Réglage des Paramètres
+        opt Réglage de la carte
+            Utilisateur -> Application : Saisie des données de la carte
+        end
+        Utilisateur -> Application : Choix du mode de création des OLE
+        alt Réglage des OLE
+            Utilisateur <- Application : Mode de création des OLE
+            alt Mode automatique
+                Utilisateur -> Application : Saisie du nombre d'OLE
+                Utilisateur <- Application : Création des OLE avec des paramètres aléatoires
+            end
+            loop Mode manuel
+                Utilisateur -> Application : Demande d'ajout d'OLE
+                Utilisateur <- Application : Ajout d'un OLE
+                opt Données
+                    Utilisateur -> Application : Saisie de la puissance
+                    Utilisateur -> Application : Saisie de la vitesse
+                end
+                Utilisateur -> Application : Terminer la création
+            end
+            Utilisateur <- Application : Création de l'OLE
+        end
+        Utilisateur -> Application : Choix du mode de création des feux
+        alt Réglage des feux
+            Utilisateur <- Application : Mode de création des feux
+            alt Mode automatique
+                Utilisateur -> Application : Saisie du nombre de feux à générer
+                Utilisateur <- Application : Création des feux avec un paramétrage aléatoire
+            end
+            loop Mode manuel
+                Utilisateur -> Application : Demande d'ajout d'un feu
+                opt Données
+                    Utilisateur -> Application : Intensité du feu
+                end
+                Utilisateur -> Application : Terminer la création du feu
+            end
+            Utilisateur <- Application : Création du feu
+        end
+    end
+end
+alt Lancement de la simulation
+    Utilisateur -> Application : Demande de lancement de la simulation
+    Utilisateur <- Application : Simulation lancée
+end
+alt Sauvegarder la simulation
+    Utilisateur -> Application : Demande de sauvegarde de la simulation
+    Utilisateur <- Application : Simulation sauvegardée
+end
+Utilisateur -> Application : Demande de fermeture de l'application
+Utilisateur <- Application : Fermeture
+
+
+@enduml

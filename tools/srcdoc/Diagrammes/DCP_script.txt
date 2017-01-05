@@ -1,0 +1,57 @@
+@startuml
+
+title Diagramme des Classes Participantes
+
+
+class Utilisateur {
+
+}
+
+class Parametrage{
+
+}
+
+class ParametrerCarte {
+    dimH : Integer
+    dimV : Integer
+    + getLargeur()
+    + setLargeur()
+    + getHauteur()
+    + setHauteur()
+}
+
+class ParametrerOLE {
+
+}
+
+class ParametrerFeu {
+
+}
+
+class SauvegarderParametrage {
+
+}
+
+class ChargerParametrage {
+
+}
+
+class Simuler {
+
+}
+
+class AssignerObjectifs {
+
+}
+
+Utilisateur --> ChargerParametrage
+Utilisateur --> Simuler
+ChargerParametrage --> Parametrage
+Simuler --> Parametrage
+Simuler --> AssignerObjectifs
+Parametrage --> ParametrerCarte
+Parametrage --> ParametrerOLE
+Parametrage --> ParametrerFeu
+Parametrage --> SauvergarderParametrage
+
+@enduml

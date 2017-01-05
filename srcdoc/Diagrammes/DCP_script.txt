@@ -1,0 +1,25 @@
+@startuml
+
+title Diagramme des Classes Participantes
+
+class Utilisateur{
+}
+
+class Parametre {
+}
+
+class ParametrerCarte{
+}
+
+class ParametrerOLE {
+}
+
+class ParametrerFeu {
+}
+
+Utilisateur --> Parametre
+Parametre --> ParametrerCarte
+Parametre --> ParametrerOLE
+Parametre --> ParametrerFeu
+
+@enduml

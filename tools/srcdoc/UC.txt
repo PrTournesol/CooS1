@@ -1,0 +1,11 @@
+actor Utilisateur
+
+Utilisateur --> (modifier la taille de la carte)
+(modifier la taille de la carte) --> (ajouter OLE)
+(modifier la taille de la carte) --> (Ajouter feu)
+(ajouter OLE) ..> (Sauvegarder configuration) : <<include>>
+(Ajouter feu) ..> (Sauvegarder configuration) : <<include>>
+(Charger configuration) --> (lancer la simulation)
+Utilisateur --> (Charger configuration)
+(Sauvegarder configuration) --> (lancer la simulation)
+

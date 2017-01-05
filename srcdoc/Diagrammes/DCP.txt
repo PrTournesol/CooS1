@@ -1,0 +1,70 @@
+@startuml
+
+title Diagramme des Classes Participantes
+
+class Utilisateur{
+}
+
+class Accueil {
+    +main()
+}
+
+class Carte{
+    -int dimH
+    -int dimV
+    -ArrayList<Feu> ListFeu
+    -ArrayList<OLE> ListOLE
+    __
+    ..Getter..
+    +getLargeur()
+    +getHauteur()
+    +getListFeu()
+    +getListOLE()
+    ..Setter..
+    +setLargeur()
+    +setHauteur()
+    ..Ajout des feux et OLE..
+    +add(Feu e)
+    +add(OLE e)
+}
+
+class OLE {
+    -int vitesse
+    -int puissance
+    -int positionH
+    -int positionV
+    __
+    ..Getter..
+    +getVitesse()
+    +getPuissance()
+    +getPositionH()
+    +getPositionV()
+    ..Setter..
+    +setVitesse()
+    +setPuissance()
+    +setPositionH()
+    +setPositionV()
+}
+
+class Feu {
+    -int intensite
+    -int positionH
+    -int positionV
+    __
+    ..Getter..
+    +getIntensite()
+    +getPositionH()
+    +getPositionV()
+    ..Setter..
+    +setIntensite()
+    +setPositionH()
+    +setPositionV()
+}
+
+Utilisateur --> Carte
+Carte --> OLE
+OLE --> Feu
+Utilisateur --> Principale
+
+
+@enduml

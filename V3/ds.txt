@@ -1,0 +1,19 @@
+@startuml
+
+actor User
+participant "Application" as A
+participant "Carte" as B
+User -> A: Nouvelle simulation
+activate A
+A -> User: Affiche page simu
+deactivate A
+User -> A: Génération carte
+activate A
+A -> B: config taille carte
+B -> B: Stocke taille
+B -> A: Génération carte
+deactivate B
+A -> User: Affiche carte
+deactivate A
+
+@enduml

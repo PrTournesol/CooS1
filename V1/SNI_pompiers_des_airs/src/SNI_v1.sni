@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sni:SNI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sni="http://sni" UID="1393B577-56A7-5294-D590-0670CD37B531" name="Planche" date="27/05/2016 11:03:29" backColor="0" titre="SNI Pompiers des airs">
+  <lstObjets xsi:type="sni:Commentaire" UID="3165020C-DF5F-19D6-C41F-78E630FBA18E" name="Ref" date="27/05/2016 11:03:50" X="5.0" Y="25.0" width="100.0" height="30.0" comment="R&#xe9;f&#xe9;rences :"/>
+  <lstObjets xsi:type="sni:Menu" UID="546B1070-5A06-76D7-BE59-88A8C927C592" name="Menu_2" date="27/05/2016 11:03:50" X="350.0" Y="35.0" width="182.0" height="57.0">
+    <inputPorts name="in1" X="0.5"/>
+    <outputPorts X="0.5" Y="1.7719299" linkPort="//@lstObjets.5/@inputPorts.0"/>
+    <lstGroupes condLabel="Pompiers des airs&#xD;&#xA;" policeOld="Arial00">
+      <lstOptions/>
+    </lstGroupes>
+  </lstObjets>
+  <lstObjets xsi:type="sni:UDC" UID="78995474-1194-31AB-D98D-7FF70C71CEDD" name="Groupe_5" date="27/05/2016 11:05:02" X="553.0" Y="386.0" width="539.0" height="235.0" backColor="0" groupBox="R&#xe9;sum&#xe9; de la simulation&#xD;&#xA;">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.7/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.5" Y="0.9957447" linkPort="//@lstObjets.51/@inputPorts.0"/>
+    <lstNodes xsi:type="sni:AffObjet" UID="986E457F-69D5-F46F-1A21-41D0DEC5D81F" name="Aff_3" date="27/05/2016 11:03:55" X="269.0" Y="55.0" width="224.0" height="113.0" backColor="0" font="Arial0" dispObjet="Carte" dispAttrib="----" policeObjet="Arial00" policeAttrib="Arial00" policeObjetOld="Arial00" policeAttribOld="Arial00">
+      <inputPorts name="in1" X="0.5" conditions="----"/>
+      <outputPorts name="out1" X="0.5" Y="0.99115044"/>
+    </lstNodes>
+    <lstNodes xsi:type="sni:AffListe" UID="DE9A1E55-2585-9D2F-8EA7-1D271B3BB5CD" name="Groupe_5.Coll_3" date="27/05/2016 11:06:19" X="53.0" Y="122.0" width="135.0" height="50.0" font="Arial0" dispListe="OLE (Vitesse)" dispAttrib="----" policeListe="Arial00" policeAttrib="Arial00" policeListeOld="Arial00" policeAttribOld="Arial00">
+      <inputPorts name="in1" X="0.5"/>
+      <outputPorts name="out1" X="0.5" Y="0.98"/>
+    </lstNodes>
+    <lstNodes xsi:type="sni:AffListe" UID="7F97796F-95B4-032F-5249-1A7AC686F105" name="Groupe_5.Coll_3" date="27/05/2016 11:06:35" X="54.0" Y="47.0" width="133.0" height="50.0" font="Arial0" dispListe="OLE (Puissance)" dispAttrib="Vitesse" policeListe="Arial00" policeAttrib="Arial00" policeListeOld="Arial00" policeAttribOld="Arial00">
+      <inputPorts name="in1" X="0.5"/>
+      <outputPorts name="out1" X="0.5" Y="0.98"/>
+    </lstNodes>
+  </lstObjets>
+  <lstObjets xsi:type="sni:AffObjet" UID="08F26981-25FA-54A8-7389-594C809D784F" name="Aff_5" date="30/05/2016 13:55:48" X="290.0" Y="136.0" width="301.0" height="82.0" font="Arial0" dispObjet="Bienvunue dans la simulation pompiers des airs" dispAttrib="----" policeObjet="Arial00" policeAttrib="Arial00" policeObjetOld="Arial00" policeAttribOld="Arial00">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.5/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.5" Y="0.9878049" linkPort="//@lstObjets.6/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Menu" UID="B6E7ECB0-81FB-EC89-2A4A-D5642F189AAD" name="Menu_6" date="30/05/2016 13:55:52" X="266.0" Y="217.0" width="348.0" height="30.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.6/@outputPorts.0"/>
+    <outputPorts X="0.16666667" Y="2.4666667" linkPort="//@lstObjets.11/@inputPorts.0"/>
+    <outputPorts X="0.5" Y="2.4666667" conditions="[....]" linkPort="//@lstObjets.7/@inputPorts.0"/>
+    <outputPorts X="0.8333333" Y="2.4666667" linkPort="//@lstObjets.84/@inputPorts.0"/>
+    <lstGroupes policeOld="Arial00">
+      <lstOptions name="Nouvelle simulation"/>
+    </lstGroupes>
+    <lstGroupes policeOld="Arial00">
+      <lstOptions name="Charger simulation"/>
+    </lstGroupes>
+    <lstGroupes policeOld="Arial00">
+      <lstOptions name="Fermer"/>
+    </lstGroupes>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="D1B2DA12-C67F-832A-2EB5-EB5CB6B201E9" name="Lien_7" date="30/05/2016 13:56:04">
+    <inputPorts name="source" linkPort="//@lstObjets.1/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.3/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="003A6204-B806-7EBD-49A2-E3F41B98537B" name="Lien-6" date="30/05/2016 13:56:20">
+    <inputPorts name="source" linkPort="//@lstObjets.3/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.4/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="C414881E-6F3C-AE64-8AFC-FA65648138E1" name="Lien-7" date="30/05/2016 14:00:02">
+    <inputPorts name="source" linkPort="//@lstObjets.4/@outputPorts.1"/>
+    <outputPorts name="target" linkPort="//@lstObjets.2/@inputPorts.0"/>
+    <lstPoints X="440.0" Y="359.0"/>
+    <lstPoints X="822.0" Y="359.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:UDC" UID="F37CAF5C-2438-EB7A-0D6E-F8B8AC3B638E" name="Groupe_13" date="30/05/2016 14:02:22" X="135.0" Y="330.0" width="250.0" height="100.0" backColor="0" groupBox="R&#xe9;glage de la carte">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.86/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.5" Y="0.99" linkPort="//@lstObjets.10/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Menu" UID="A4A5B51A-CB27-CCD6-0A82-6322FCF8FFA6" name="Menu_11" date="30/05/2016 14:03:14" X="133.0" Y="429.0" width="255.0" height="69.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.10/@outputPorts.0"/>
+    <outputPorts X="0.49803922" Y="1.6376811" conditions="[Taaille s&#xe9;lectionn&#xe9;e]" linkPort="//@lstObjets.15/@inputPorts.0"/>
+    <lstGroupes condLabel="----" policeOld="Arial00">
+      <lstOptions name="----"/>
+    </lstGroupes>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="73D7042D-73DA-69FA-630A-6152BC22BC15" name="Lien-11" date="30/05/2016 14:03:16">
+    <inputPorts name="source" linkPort="//@lstObjets.8/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.9/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="2EB03D5F-50A5-8E8C-512C-418FC97F28CA" name="Lien-11" date="30/05/2016 14:05:13">
+    <inputPorts name="source" linkPort="//@lstObjets.4/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.85/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Menu" UID="7CD466A1-BC34-8B0F-10F4-367B1C7CD2BA" name="Menu_14" date="30/05/2016 14:05:19" X="109.0" Y="662.0" width="295.0" height="30.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.14/@outputPorts.0"/>
+    <outputPorts X="0.24745762" Y="2.4666667" linkPort="//@lstObjets.21/@inputPorts.0"/>
+    <outputPorts X="0.7457627" Y="2.4666667" linkPort="//@lstObjets.83/@inputPorts.0"/>
+    <lstGroupes condLabel="----" policeOld="Arial00">
+      <lstOptions name="Automatique"/>
+    </lstGroupes>
+    <lstGroupes policeOld="Arial00">
+      <lstOptions name="Manuel"/>
+    </lstGroupes>
+  </lstObjets>
+  <lstObjets xsi:type="sni:UDC" UID="C9F87747-B519-6E65-27E0-BDA659599E18" name="Groupe_15" date="30/05/2016 14:05:19" X="131.0" Y="563.0" width="250.0" height="100.0" backColor="0" groupBox="R&#xe9;glage des OLE">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.15/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.5" Y="0.99" linkPort="//@lstObjets.14/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="28C9C802-077B-C1FD-6518-77B953BA6BE3" name="Lien-14" date="30/05/2016 14:05:19">
+    <inputPorts name="source" linkPort="//@lstObjets.13/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.12/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="34B9A930-1F76-77C7-61B5-5AC8396EFEE8" name="Lien_17" date="30/05/2016 14:06:26">
+    <inputPorts name="source" linkPort="//@lstObjets.9/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.13/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Retour" UID="99EB576A-E3CD-23B4-0649-8F206BD396C4" name="Retour_18" date="30/05/2016 14:06:42" X="545.0" Y="291.0" width="20.0" height="20.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.84/@outputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Menu" UID="026CA0BE-79A8-5812-D5F9-A4606E0D286A" name="Menu_19" date="30/05/2016 14:07:08" X="63.0" Y="1528.0" width="295.0" height="30.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.19/@outputPorts.0"/>
+    <outputPorts X="0.24745762" Y="2.4666667" linkPort="//@lstObjets.36/@inputPorts.0"/>
+    <outputPorts X="0.7457627" Y="2.4666667" linkPort="//@lstObjets.43/@inputPorts.0"/>
+    <lstGroupes condLabel="----" policeOld="Arial00">
+      <lstOptions name="Automatique"/>
+    </lstGroupes>
+    <lstGroupes policeOld="Arial00">
+      <lstOptions name="Manuel"/>
+    </lstGroupes>
+  </lstObjets>
+  <lstObjets xsi:type="sni:UDC" UID="7EABDEA7-51C3-1D63-C8CF-371D0B8E8DA7" name="Groupe_20" date="30/05/2016 14:07:08" X="86.0" Y="1429.0" width="250.0" height="100.0" backColor="0" groupBox="R&#xe9;glage des feux">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.31/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.5" Y="0.99" linkPort="//@lstObjets.19/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="8DF51F07-E7F7-191E-A682-3624CFD67579" name="Lien-19" date="30/05/2016 14:07:08">
+    <inputPorts name="source" linkPort="//@lstObjets.18/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.17/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:AffObjet" UID="2B762DAD-B6F8-6E73-7E57-774407127C10" name="Aff_22" date="30/05/2016 14:07:50" X="130.0" Y="891.0" width="108.0" height="55.0" font="Arial0" dispObjet="Nombre d'OLE a g&#xe9;n&#xe9;rer" dispAttrib="(nombre)" policeObjet="Arial00" policeAttrib="Arial00" policeObjetOld="Arial00" policeAttribOld="Arial00">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.21/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.5" Y="0.9818182" linkPort="//@lstObjets.23/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="0FFC53D3-9A97-CFEF-5AF7-0C11972E1D97" name="Lien-21" date="30/05/2016 14:07:52">
+    <inputPorts name="source" linkPort="//@lstObjets.12/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.20/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:SaisieObjet" UID="F5837BD8-1802-7F53-B7A3-3A6951CD8553" name="Saisie_24" date="30/05/2016 14:07:56" X="112.0" Y="945.0" width="124.0" height="56.0" font="Arial0" recupObjet="nombre d'OLE" recupAttrib="----" policeObjet="Arial00" policeAttrib="Arial00" policeObjetOld="Arial00" policeAttribOld="Arial00">
+    <inputPorts name="in1" X="0.58064514" linkPort="//@lstObjets.23/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.41935486" Y="0.98214287" conditions="[....]" linkPort="//@lstObjets.32/@inputPorts.0"/>
+    <outputPorts xsi:type="sni:ErrorPort" name="err1" X="0.088709675" Y="0.5"/>
+    <outputPorts xsi:type="sni:ErrorPort" name="err2" X="0.91935486" Y="0.5"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="9C39EDFB-104B-0EA0-30C5-0ED1B92E340A" name="Lien-23" date="30/05/2016 14:08:30">
+    <inputPorts name="source" linkPort="//@lstObjets.20/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.22/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:UDC" UID="013F2BF7-E226-ECA8-F2EE-629774549497" name="Groupe_26" date="30/05/2016 14:08:59" X="321.0" Y="772.0" width="250.0" height="100.0" groupBox="Ajout d'OLE">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.83/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.5" Y="0.99" linkPort="//@lstObjets.26/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Menu" UID="90C6A14B-9D9B-6639-A067-3C3B8F2EF013" name="Menu_27" date="30/05/2016 14:09:13" X="309.0" Y="871.0" width="275.0" height="30.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.26/@outputPorts.0"/>
+    <outputPorts X="0.49818182" Y="2.4666667" linkPort="//@lstObjets.38/@inputPorts.0"/>
+    <lstGroupes policeOld="Arial00">
+      <lstOptions name="Ajouter un OLE"/>
+    </lstGroupes>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="4BC75174-277B-1FE7-6869-1E032329F0DD" name="Lien-26" date="30/05/2016 14:09:30">
+    <inputPorts name="source" linkPort="//@lstObjets.24/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.25/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:UDC" UID="E8681153-DE0A-171B-7454-8A089CE34E9A" name="Groupe_5.Groupe_4" date="30/05/2016 14:09:52" X="457.0" Y="1063.0" width="319.0" height="183.0" backColor="0" groupBox="R&#xe9;sum&#xe9; de la simulation&#xD;&#xA;">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.69/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.5" Y="0.9945355" linkPort="//@lstObjets.29/@inputPorts.0"/>
+    <lstNodes xsi:type="sni:AffObjet" UID="986E457F-69D5-F46F-1A21-41D0DEC5D81F" name="Groupe_5.Groupe_4.Aff-1" date="27/05/2016 11:03:55" X="40.0" Y="47.0" width="224.0" height="113.0" backColor="0" font="Arial0" dispObjet="Carte" dispAttrib="----" policeObjet="Arial00" policeAttrib="Arial00" policeObjetOld="Arial00" policeAttribOld="Arial00">
+      <inputPorts name="in1" X="0.5" conditions="----"/>
+      <outputPorts name="out1" X="0.5" Y="0.99115044"/>
+    </lstNodes>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Menu" UID="C74C43AD-0E1F-5D14-4AEE-2CB9D9A1C7B5" name="Menu_31" date="30/05/2016 14:10:07" X="420.0" Y="1244.0" width="395.0" height="30.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.29/@outputPorts.0"/>
+    <outputPorts X="0.12405063" Y="2.4666667" linkPort="//@lstObjets.58/@inputPorts.0"/>
+    <outputPorts X="0.3721519" Y="2.4666667" conditions="[OLE S&#xe9;lectionn&#xe9;]" linkPort="//@lstObjets.57/@inputPorts.0"/>
+    <outputPorts X="0.62025315" Y="2.4666667" conditions="[nb d'OLE >1]" linkPort="//@lstObjets.56/@inputPorts.0"/>
+    <outputPorts X="0.86835444" Y="2.4666667" conditions="[OLE S&#xe9;lectionn&#xe9;]" linkPort="//@lstObjets.39/@inputPorts.0"/>
+    <lstGroupes policeOld="Arial00">
+      <lstOptions name="Ajouter OLE"/>
+    </lstGroupes>
+    <lstGroupes condLabel="1" policeOld="Arial00">
+      <lstOptions name="Modifier"/>
+    </lstGroupes>
+    <lstGroupes condLabel="1" policeOld="Arial00">
+      <lstOptions name="Terminer"/>
+    </lstGroupes>
+    <lstGroupes condLabel="1" policeOld="Arial00">
+      <lstOptions name="Supprimer"/>
+    </lstGroupes>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="FA24137E-F341-DC89-DA05-F5D507B07A24" name="Lien-29" date="30/05/2016 14:10:49">
+    <inputPorts name="source" linkPort="//@lstObjets.27/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.28/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Jonction" UID="7B493E73-E4FD-D820-2F8B-D022B18F5245" name="Jonction_34" date="30/05/2016 14:13:00" X="196.0" Y="1369.0" width="30.0" height="30.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.32/@outputPorts.0"/>
+    <inputPorts name="in2" Y="0.5"/>
+    <inputPorts name="in3" X="1.0" Y="0.5" linkPort="//@lstObjets.56/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.5" Y="1.0" linkPort="//@lstObjets.31/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="8F57AFF5-FD67-03A8-A612-0D206DD1EC16" name="Lien-31" date="30/05/2016 14:13:22">
+    <inputPorts name="source" linkPort="//@lstObjets.30/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.18/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="AAA18195-7B2A-5F85-B413-FE5F8DBBAD14" name="Lien-32" date="30/05/2016 14:13:32">
+    <inputPorts name="source" linkPort="//@lstObjets.22/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.30/@inputPorts.0"/>
+    <lstPoints X="164.0" Y="1020.0"/>
+    <lstPoints X="211.0" Y="1020.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:SaisieObjet" UID="1BCF6494-D21D-08FD-CA31-77E97747FD0F" name="Saisie_44" date="30/05/2016 14:13:55" X="62.0" Y="1710.0" width="124.0" height="56.0" font="Arial0" recupObjet="nombre de feux" recupAttrib="----" policeObjet="Arial00" policeAttrib="Arial00" policeObjetOld="Arial00" policeAttribOld="Arial00">
+    <inputPorts name="in1" X="0.58064514" linkPort="//@lstObjets.35/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.41935486" Y="0.98214287" conditions="[....]" linkPort="//@lstObjets.74/@inputPorts.0"/>
+    <outputPorts xsi:type="sni:ErrorPort" name="err1" X="0.088709675" Y="0.5"/>
+    <outputPorts xsi:type="sni:ErrorPort" name="err2" X="0.91935486" Y="0.5"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:AffObjet" UID="0DB8FE68-D12E-1B49-64CD-516B8CEFAA28" name="Aff_45" date="30/05/2016 14:13:55" X="61.0" Y="1656.0" width="143.0" height="55.0" font="Arial0" dispObjet="Nombre de Feux" dispAttrib="(nombre)" policeObjet="Arial00" policeAttrib="Arial00" policeObjetOld="Arial00" policeAttribOld="Arial00">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.36/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.5" Y="0.9818182" linkPort="//@lstObjets.35/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="C91156F0-77D9-F692-3DFE-15D1F0B1D3FC" name="Lien-35" date="30/05/2016 14:13:55">
+    <inputPorts name="source" linkPort="//@lstObjets.34/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.33/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="F7BF583D-1DC3-D8A8-5BAA-C1D30B0CCB82" name="Lien-36" date="30/05/2016 14:13:58">
+    <inputPorts name="source" linkPort="//@lstObjets.17/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.34/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Jonction" UID="F7A4AAE9-5A00-B3A2-CED9-FB1008FF21AA" name="Jonction_49" date="30/05/2016 14:15:06" X="603.0" Y="1011.0" width="30.0" height="30.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.68/@outputPorts.0"/>
+    <inputPorts name="in2" Y="0.5" linkPort="//@lstObjets.58/@outputPorts.0"/>
+    <inputPorts name="in3" X="1.0" Y="0.5" linkPort="//@lstObjets.39/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.5" Y="1.0" linkPort="//@lstObjets.69/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="10C8D903-F169-CC97-E436-0BA1ADA44BD1" name="Lien-38" date="30/05/2016 14:15:13">
+    <inputPorts name="source" linkPort="//@lstObjets.25/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.67/@inputPorts.0"/>
+    <lstPoints X="618.0" Y="945.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="ADEEA2FB-E134-6E97-8F8D-E46321A2E0D8" name="Lien-39" date="30/05/2016 14:15:16">
+    <inputPorts name="source" linkPort="//@lstObjets.28/@outputPorts.3"/>
+    <outputPorts name="target" linkPort="//@lstObjets.37/@inputPorts.2"/>
+    <lstPoints X="763.0" Y="1372.0"/>
+    <lstPoints X="820.0" Y="1372.0"/>
+    <lstPoints X="820.0" Y="1026.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Menu" UID="95DC08A8-5C46-0CE2-5ED2-A9B5E57AB734" name="Menu_45" date="30/05/2016 14:16:50" X="239.0" Y="1749.0" width="275.0" height="30.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.42/@outputPorts.0"/>
+    <outputPorts X="0.49818182" Y="2.4666667" linkPort="//@lstObjets.72/@inputPorts.0"/>
+    <lstGroupes policeOld="Arial00">
+      <lstOptions name="Ajouter un feu"/>
+    </lstGroupes>
+  </lstObjets>
+  <lstObjets xsi:type="sni:UDC" UID="F407FBEF-289B-D357-8373-EED1DD6AC648" name="Groupe_46" date="30/05/2016 14:16:50" X="251.0" Y="1650.0" width="250.0" height="100.0" groupBox="Ajout Feux">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.43/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.5" Y="0.99" linkPort="//@lstObjets.42/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="66F2380F-C277-66CA-FB67-50BDD4B1C4EC" name="Lien-42" date="30/05/2016 14:16:50">
+    <inputPorts name="source" linkPort="//@lstObjets.41/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.40/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="96CB7D43-05DC-4E60-DD77-11D608805DF3" name="Lien-43" date="30/05/2016 14:17:32">
+    <inputPorts name="source" linkPort="//@lstObjets.17/@outputPorts.1"/>
+    <outputPorts name="target" linkPort="//@lstObjets.41/@inputPorts.0"/>
+    <lstPoints X="282.0" Y="1624.0"/>
+    <lstPoints X="378.0" Y="1624.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Commentaire" UID="C80F9F2D-A3C6-8042-C680-48EFA5AFE495" name="Comment_57" date="30/05/2016 14:17:54" X="1176.0" Y="3149.0" width="100.0" height="30.0"/>
+  <lstObjets xsi:type="sni:UDC" UID="71B18C79-7C20-8BA1-A2F7-91922C15DF90" name="Groupe_57" date="30/05/2016 14:18:22" X="543.0" Y="2374.0" width="319.0" height="154.0" backColor="0" groupBox="Lancer la simulation">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.47/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.5" Y="0.9935065" linkPort="//@lstObjets.49/@inputPorts.0"/>
+    <lstNodes xsi:type="sni:AffObjet" UID="986E457F-69D5-F46F-1A21-41D0DEC5D81F" name="Groupe_5.Groupe_4.Aff-1" date="27/05/2016 11:03:55" X="40.0" Y="47.0" width="224.0" height="79.0" backColor="0" font="Arial0" dispObjet="Carte" dispAttrib="----" policeObjet="Arial00" policeAttrib="Arial00" policeObjetOld="Arial00" policeAttribOld="Arial00">
+      <inputPorts name="in1" X="0.5" conditions="----"/>
+      <outputPorts name="out1" X="0.5" Y="0.98734176"/>
+    </lstNodes>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Jonction" UID="CE8C6295-77BE-F76C-6410-702E013DA057" name="Jonction_59" date="30/05/2016 14:18:42" X="687.0" Y="2319.0" width="30.0" height="30.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.73/@outputPorts.0"/>
+    <inputPorts name="in2" Y="0.5" linkPort="//@lstObjets.74/@outputPorts.0"/>
+    <inputPorts name="in3" X="1.0" Y="0.5" linkPort="//@lstObjets.51/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.5" Y="1.0" linkPort="//@lstObjets.47/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="277E529F-2E58-1CAD-30B5-CE4C379479AC" name="Lien-47" date="30/05/2016 14:18:53">
+    <inputPorts name="source" linkPort="//@lstObjets.46/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.45/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Menu" UID="D18EFA32-ADC3-70EC-8CA9-BD0046AE36E3" name="Menu_61" date="30/05/2016 14:19:38" X="526.0" Y="2526.0" width="354.0" height="30.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.49/@outputPorts.0"/>
+    <outputPorts X="0.16666667" Y="2.4666667" linkPort="//@lstObjets.53/@inputPorts.0"/>
+    <outputPorts X="0.5" Y="2.4666667" conditions="[....]" linkPort="//@lstObjets.55/@inputPorts.0"/>
+    <outputPorts X="0.8333333" Y="2.4666667" linkPort="//@lstObjets.75/@inputPorts.0"/>
+    <lstGroupes policeOld="Arial00">
+      <lstOptions name="Lancer"/>
+    </lstGroupes>
+    <lstGroupes policeOld="Arial00">
+      <lstOptions name="Sauvegarder"/>
+    </lstGroupes>
+    <lstGroupes policeOld="Arial00">
+      <lstOptions name="Fermer"/>
+    </lstGroupes>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="FF763D9B-C08F-E84F-C6F1-A0FEBF8B08CE" name="Lien-49" date="30/05/2016 14:19:46">
+    <inputPorts name="source" linkPort="//@lstObjets.45/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.48/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Retour" UID="A81F07C1-89C8-24CD-13D5-4A5F46440A89" name="Retour_63" date="30/05/2016 14:20:18" X="810.0" Y="2600.0" width="20.0" height="20.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.75/@outputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="C89ACE15-C494-9086-3800-FB254259CAB9" name="Lien-51" date="30/05/2016 14:20:33">
+    <inputPorts name="source" linkPort="//@lstObjets.2/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.46/@inputPorts.2"/>
+    <lstPoints X="822.0" Y="661.0"/>
+    <lstPoints X="898.0" Y="661.0"/>
+    <lstPoints X="898.0" Y="2335.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:UDC" UID="9D9FA18F-4BCC-E969-A260-85C3AFF30C59" name="Groupe_57.Groupe_2" date="30/05/2016 14:21:04" X="429.0" Y="2658.0" width="319.0" height="154.0" backColor="0" groupBox="Simulation en cours">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.53/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.5" Y="0.9935065" linkPort="//@lstObjets.79/@inputPorts.0"/>
+    <lstNodes xsi:type="sni:AffObjet" UID="986E457F-69D5-F46F-1A21-41D0DEC5D81F" name="Groupe_57.Groupe_2.Aff-1" date="27/05/2016 11:03:55" X="40.0" Y="47.0" width="224.0" height="79.0" backColor="0" font="Arial0" dispObjet="Carte" dispAttrib="----" policeObjet="Arial00" policeAttrib="Arial00" policeObjetOld="Arial00" policeAttribOld="Arial00">
+      <inputPorts name="in1" X="0.5" conditions="----"/>
+      <outputPorts name="out1" X="0.5" Y="0.98734176"/>
+    </lstNodes>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="81DB60F4-EC16-68C1-5D80-0B35B524AF94" name="Lien-53" date="30/05/2016 14:21:25">
+    <inputPorts name="source" linkPort="//@lstObjets.48/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.52/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:UDC" UID="96B230C7-5BD6-30FB-6EBF-A4D4216CC098" name="Groupe_69" date="30/05/2016 14:21:28" X="879.0" Y="2957.0" width="250.0" height="100.0" groupBox="Sauvegarde">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.82/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.5" Y="0.99" linkPort="//@lstObjets.91/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="7B1A0DE4-16D8-7076-5B7D-8F7A49D86160" name="Lien-55" date="30/05/2016 14:21:52">
+    <inputPorts name="source" linkPort="//@lstObjets.48/@outputPorts.1"/>
+    <outputPorts name="target" linkPort="//@lstObjets.80/@inputPorts.0"/>
+    <lstPoints X="703.0" Y="2631.0"/>
+    <lstPoints X="1004.0" Y="2631.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="059C77DD-FBBD-9A41-DDCA-B0C5568441B2" name="Lien-56" date="30/05/2016 14:13:21">
+    <inputPorts name="source" linkPort="//@lstObjets.28/@outputPorts.2"/>
+    <outputPorts name="target" linkPort="//@lstObjets.30/@inputPorts.2"/>
+    <lstPoints X="664.0" Y="1384.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="B46B269D-4F43-FF62-ED50-3C67A0B82115" name="Lien-57" date="30/05/2016 14:15:39">
+    <inputPorts name="source" linkPort="//@lstObjets.28/@outputPorts.1"/>
+    <outputPorts name="target" linkPort="//@lstObjets.67/@inputPorts.1"/>
+    <lstPoints X="567.0" Y="1345.0"/>
+    <lstPoints X="377.0" Y="1345.0"/>
+    <lstPoints X="377.0" Y="996.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="5996ABC2-A6E5-94EC-CB47-FD93201FF77E" name="Lien-58" date="30/05/2016 14:58:51">
+    <inputPorts name="source" linkPort="//@lstObjets.28/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.37/@inputPorts.1"/>
+    <lstPoints X="403.0" Y="1318.0"/>
+    <lstPoints X="403.0" Y="1026.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Menu" UID="3A094657-E02A-44B4-BD0C-FC3AC9EC2118" name="Menu_74" date="30/05/2016 15:01:50" X="457.0" Y="2132.0" width="395.0" height="30.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.61/@outputPorts.0"/>
+    <outputPorts X="0.12405063" Y="2.4666667" linkPort="//@lstObjets.63/@inputPorts.0"/>
+    <outputPorts X="0.3721519" Y="2.4666667" conditions="[OLE S&#xe9;lectionn&#xe9;]" linkPort="//@lstObjets.64/@inputPorts.0"/>
+    <outputPorts X="0.62025315" Y="2.4666667" conditions="[nb d'OLE >1]" linkPort="//@lstObjets.73/@inputPorts.0"/>
+    <outputPorts X="0.86835444" Y="2.4666667" conditions="[OLE S&#xe9;lectionn&#xe9;]" linkPort="//@lstObjets.65/@inputPorts.0"/>
+    <lstGroupes policeOld="Arial00">
+      <lstOptions name="Ajouter OLE"/>
+    </lstGroupes>
+    <lstGroupes condLabel="1" policeOld="Arial00">
+      <lstOptions name="Modifier"/>
+    </lstGroupes>
+    <lstGroupes condLabel="1" policeOld="Arial00">
+      <lstOptions name="Terminer"/>
+    </lstGroupes>
+    <lstGroupes condLabel="1" policeOld="Arial00">
+      <lstOptions name="Supprimer"/>
+    </lstGroupes>
+  </lstObjets>
+  <lstObjets xsi:type="sni:UDC" UID="AA7FC97C-3395-0EB3-14DA-83D4707AA119" name="Groupe_75" date="30/05/2016 15:01:50" X="514.0" Y="1951.0" width="319.0" height="183.0" backColor="0" groupBox="R&#xe9;sum&#xe9; de la simulation&#xD;&#xA;">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.66/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.5" Y="0.9945355" linkPort="//@lstObjets.61/@inputPorts.0"/>
+    <lstNodes xsi:type="sni:AffObjet" UID="986E457F-69D5-F46F-1A21-41D0DEC5D81F" name="Groupe_5.Groupe_4.Aff-1" date="27/05/2016 11:03:55" X="40.0" Y="47.0" width="224.0" height="113.0" backColor="0" font="Arial0" dispObjet="Carte" dispAttrib="----" policeObjet="Arial00" policeAttrib="Arial00" policeObjetOld="Arial00" policeAttribOld="Arial00">
+      <inputPorts name="in1" X="0.5" conditions="----"/>
+      <outputPorts name="out1" X="0.5" Y="0.99115044"/>
+    </lstNodes>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="BF93FB97-D116-06B7-BA17-CF4460E47568" name="Lien-61" date="30/05/2016 15:01:50">
+    <inputPorts name="source" linkPort="//@lstObjets.60/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.59/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Jonction" UID="938E7C26-CD99-D387-F8FE-23D63CB06A95" name="Jonction_77" date="30/05/2016 15:01:50" X="674.0" Y="1897.0" width="30.0" height="30.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.71/@outputPorts.0"/>
+    <inputPorts name="in2" Y="0.5" linkPort="//@lstObjets.63/@outputPorts.0"/>
+    <inputPorts name="in3" X="1.0" Y="0.5" linkPort="//@lstObjets.65/@outputPorts.0"/>
+    <outputPorts name="out1" X="0.5" Y="1.0" linkPort="//@lstObjets.66/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="9F0E7DDF-CEE7-9AB9-54FD-14FC08BCD500" name="Lien-63" date="30/05/2016 15:01:50">
+    <inputPorts name="source" linkPort="//@lstObjets.59/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.62/@inputPorts.1"/>
+    <lstPoints X="440.0" Y="2206.0"/>
+    <lstPoints X="440.0" Y="1912.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="00DB49C2-858B-F1D9-D847-2F5A6566438C" name="Lien-64" date="30/05/2016 15:01:50">
+    <inputPorts name="source" linkPort="//@lstObjets.59/@outputPorts.1"/>
+    <outputPorts name="target" linkPort="//@lstObjets.70/@inputPorts.1"/>
+    <lstPoints X="604.0" Y="2233.0"/>
+    <lstPoints X="419.0" Y="2233.0"/>
+    <lstPoints X="419.0" Y="1882.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="618BFC00-6B0B-AE4C-1EFC-4681C4F888D7" name="Lien-65" date="30/05/2016 15:01:50">
+    <inputPorts name="source" linkPort="//@lstObjets.59/@outputPorts.3"/>
+    <outputPorts name="target" linkPort="//@lstObjets.62/@inputPorts.2"/>
+    <lstPoints X="800.0" Y="2231.0"/>
+    <lstPoints X="876.0" Y="2231.0"/>
+    <lstPoints X="876.0" Y="1912.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="AF438FAA-EB72-48BD-1C60-A9A54BCC1A7C" name="Lien-66" date="30/05/2016 15:01:50">
+    <inputPorts name="source" linkPort="//@lstObjets.62/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.60/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Jonction" UID="5FC73222-8C65-7F6E-291A-77240B816BCA" name="Jonction_75" date="30/05/2016 15:03:20" X="603.0" Y="981.0" width="30.0" height="30.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.38/@outputPorts.0"/>
+    <inputPorts name="in2" Y="0.5" linkPort="//@lstObjets.57/@outputPorts.0"/>
+    <inputPorts name="in3" X="1.0" Y="0.5"/>
+    <outputPorts name="out1" X="0.5" Y="1.0" linkPort="//@lstObjets.68/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="8907C3AF-B96C-C681-61D1-E0BA4E19252A" name="Lien-68" date="30/05/2016 15:03:56">
+    <inputPorts name="source" linkPort="//@lstObjets.67/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.37/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="CD5F774F-64B2-5F77-D95A-11AAE26BCB9F" name="Lien-69" date="30/05/2016 15:04:01">
+    <inputPorts name="source" linkPort="//@lstObjets.37/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.27/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Jonction" UID="2F423712-4255-0512-2E6C-A10001253B7D" name="Jonction_77" date="30/05/2016 15:04:06" X="682.0" Y="1867.0" width="30.0" height="30.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.72/@outputPorts.0"/>
+    <inputPorts name="in2" Y="0.5" linkPort="//@lstObjets.64/@outputPorts.0"/>
+    <inputPorts name="in3" X="1.0" Y="0.5"/>
+    <outputPorts name="out1" X="0.5" Y="1.0" linkPort="//@lstObjets.71/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="48C4D456-1F2C-1D7E-1618-A02A19D7B1AB" name="Lien-71" date="30/05/2016 15:04:11">
+    <inputPorts name="source" linkPort="//@lstObjets.70/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.62/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="2C3C512E-081B-DBFC-8B91-E4EEEA774637" name="Lien-72" date="30/05/2016 15:04:15">
+    <inputPorts name="source" linkPort="//@lstObjets.40/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.70/@inputPorts.0"/>
+    <lstPoints X="697.0" Y="1823.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="A08277F8-3AD3-678E-63E9-99203730820A" name="Lien-73" date="30/05/2016 15:04:46">
+    <inputPorts name="source" linkPort="//@lstObjets.59/@outputPorts.2"/>
+    <outputPorts name="target" linkPort="//@lstObjets.46/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="F9DC481F-1724-E31F-8439-B8C376D58C19" name="Lien-74" date="30/05/2016 15:06:46">
+    <inputPorts name="source" linkPort="//@lstObjets.33/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.46/@inputPorts.1"/>
+    <lstPoints X="114.0" Y="2334.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="8BA0B670-A1FB-DDCF-A9B8-C18ABE123275" name="Lien-75" date="30/05/2016 15:08:37">
+    <inputPorts name="source" linkPort="//@lstObjets.48/@outputPorts.2"/>
+    <outputPorts name="target" linkPort="//@lstObjets.50/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Menu" UID="29946C88-412D-344D-74FA-B776D35EEEF2" name="Menu_85" date="30/05/2016 15:08:52" X="411.0" Y="2810.0" width="354.0" height="30.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.79/@outputPorts.0"/>
+    <outputPorts X="0.16666667" Y="2.4666667" linkPort="//@lstObjets.87/@inputPorts.0"/>
+    <outputPorts X="0.5" Y="2.4666667" conditions="[....]" linkPort="//@lstObjets.81/@inputPorts.0"/>
+    <outputPorts X="0.8333333" Y="2.4666667" linkPort="//@lstObjets.78/@inputPorts.0"/>
+    <lstGroupes policeOld="Arial00">
+      <lstOptions name="Nouvelle simulation"/>
+    </lstGroupes>
+    <lstGroupes policeOld="Arial00">
+      <lstOptions name="Sauvegarder"/>
+    </lstGroupes>
+    <lstGroupes policeOld="Arial00">
+      <lstOptions name="Fermer"/>
+    </lstGroupes>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Retour" UID="7C359AD1-9CCD-4E5A-5437-D5BEA65D4DD0" name="Retour_86" date="30/05/2016 15:08:52" X="715.0" Y="2881.0" width="20.0" height="20.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.78/@outputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="3E0E3882-EBE0-D7B2-BD61-DB7A43F03A47" name="Lien-78" date="30/05/2016 15:08:52">
+    <inputPorts name="source" linkPort="//@lstObjets.76/@outputPorts.2"/>
+    <outputPorts name="target" linkPort="//@lstObjets.77/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="47828ED1-2154-016D-617E-CB212644EEB4" name="Lien-79" date="30/05/2016 15:09:01">
+    <inputPorts name="source" linkPort="//@lstObjets.52/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.76/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Jonction" UID="E491BDFE-376A-5849-D2A9-9A0B1A06C744" name="Jonction_85" date="30/05/2016 15:09:30" X="989.0" Y="2927.0" width="30.0" height="30.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.55/@outputPorts.0"/>
+    <inputPorts name="in2" Y="0.5" linkPort="//@lstObjets.81/@outputPorts.0"/>
+    <inputPorts name="in3" X="1.0" Y="0.5"/>
+    <outputPorts name="out1" X="0.5" Y="1.0" linkPort="//@lstObjets.82/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="B47FF13F-A647-A137-1C74-EF686858607C" name="Lien-81" date="30/05/2016 15:09:36">
+    <inputPorts name="source" linkPort="//@lstObjets.76/@outputPorts.1"/>
+    <outputPorts name="target" linkPort="//@lstObjets.80/@inputPorts.1"/>
+    <lstPoints X="588.0" Y="2942.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="F63E9FD1-5D8E-AFB2-C0E3-DF0CA83DDB54" name="Lien-82" date="30/05/2016 15:09:38">
+    <inputPorts name="source" linkPort="//@lstObjets.80/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.54/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="86BE681F-C71D-00B0-44D7-F45DBEC24198" name="Lien-83" date="30/05/2016 15:10:58">
+    <inputPorts name="source" linkPort="//@lstObjets.12/@outputPorts.1"/>
+    <outputPorts name="target" linkPort="//@lstObjets.24/@inputPorts.0"/>
+    <lstPoints X="446.0" Y="736.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="EBD19A2A-E7A7-33B9-921D-1AF1A5B3043C" name="Lien_89" date="30/05/2016 15:11:49">
+    <inputPorts name="source" linkPort="//@lstObjets.4/@outputPorts.2"/>
+    <outputPorts name="target" linkPort="//@lstObjets.16/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Jonction" UID="1F889202-1BD7-D694-D356-A4DE9093EFC2" name="Jonction_90" date="30/05/2016 15:12:53" X="245.0" Y="300.0" width="30.0" height="30.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.11/@outputPorts.0"/>
+    <inputPorts name="in2" Y="0.5" linkPort="//@lstObjets.87/@outputPorts.0"/>
+    <inputPorts name="in3" X="1.0" Y="0.5"/>
+    <outputPorts name="out1" X="0.5" Y="1.0" linkPort="//@lstObjets.86/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="E220C140-60D2-FDBA-ACDE-AEBB72DA0C46" name="Lien_91" date="30/05/2016 15:12:59">
+    <inputPorts name="source" linkPort="//@lstObjets.85/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.8/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="3B58E9D1-9CBE-E094-5FB4-3E74232B2672" name="Lien-87" date="30/05/2016 15:13:06">
+    <inputPorts name="source" linkPort="//@lstObjets.76/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.85/@inputPorts.1"/>
+    <lstPoints X="37.0" Y="2884.0"/>
+    <lstPoints X="37.0" Y="315.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Menu" UID="9191DF8D-02DA-4D41-5FD8-64861D39DBFF" name="Menu_93" date="30/05/2016 15:13:57" X="847.0" Y="3056.0" width="314.0" height="30.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.91/@outputPorts.0"/>
+    <outputPorts X="0.24840765" Y="2.4666667" conditions="[....]"/>
+    <outputPorts X="0.74840766" Y="2.4666667" linkPort="//@lstObjets.90/@inputPorts.0"/>
+    <lstGroupes policeOld="Arial00">
+      <lstOptions name="Valider"/>
+    </lstGroupes>
+    <lstGroupes policeOld="Arial00">
+      <lstOptions name="Fermer"/>
+    </lstGroupes>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Retour" UID="05AC17A0-FD32-588A-942B-9136F2D4D7A3" name="Retour_94" date="30/05/2016 15:13:57" X="1073.0" Y="3130.0" width="20.0" height="20.0">
+    <inputPorts name="in1" X="0.5" linkPort="//@lstObjets.90/@outputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="BD2238CE-81AF-1334-1343-942F9FCDE06B" name="Lien-90" date="30/05/2016 15:13:57">
+    <inputPorts name="source" linkPort="//@lstObjets.88/@outputPorts.1"/>
+    <outputPorts name="target" linkPort="//@lstObjets.89/@inputPorts.0"/>
+  </lstObjets>
+  <lstObjets xsi:type="sni:Lien" UID="B7D85375-637B-975D-4820-8F4121CA5F1C" name="Lien-91" date="30/05/2016 15:14:03">
+    <inputPorts name="source" linkPort="//@lstObjets.54/@outputPorts.0"/>
+    <outputPorts name="target" linkPort="//@lstObjets.88/@inputPorts.0"/>
+  </lstObjets>
+</sni:SNI>

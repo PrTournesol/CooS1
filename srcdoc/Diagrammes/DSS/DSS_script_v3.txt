@@ -1,0 +1,28 @@
+@startuml
+
+title DSS Pompiers des airs
+
+Utilisateur -> Application : Nouvelle Simulation
+alt Création Simulation
+    Utilisateur <- Application : Simulation créée
+    alt Réglage des Paramètres
+        Utilisateur -> Application : Choix du mode de création des feux
+        alt Réglage des feux
+            Utilisateur <- Application : Mode de création des feux
+            alt Mode automatique
+                Utilisateur -> Application : Saisie du nombre de feux à générer
+                Utilisateur <- Application : Création des feux avec un paramétrage aléatoire
+            end
+            loop Mode manuel
+                Utilisateur -> Application : Demande d'ajout d'un feu
+                opt Données
+                    Utilisateur -> Application : Intensité du feu
+                end
+                Utilisateur -> Application : Terminer la création du feu
+            end
+            Utilisateur <- Application : Création du feu
+        end
+    end
+end
+
+@enduml
